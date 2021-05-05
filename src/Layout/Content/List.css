@@ -1,0 +1,74 @@
+.img-detail {
+    width: 60%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 0.7em;
+}
+
+img {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+    justify-content: center;
+    grid-gap: 1rem;  
+    margin-bottom: 1rem; 
+}
+.container-front-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, max-content));
+    justify-content: center;
+    grid-gap: 1rem;  
+    margin-bottom: 1rem; 
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.card-text {
+    padding:0.4rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas: "left right";
+    background-color: white;
+    margin: 2em 1em;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.08); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.08);
+    border-radius: 0.7rem;
+    padding: 3em 0;
+}
+
+.left {
+    grid-area: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.right {
+    grid-area: right;
+    margin-right: 20%;
+}
+.ant-layout-sider {
+   
+    background: white !important;
+}
